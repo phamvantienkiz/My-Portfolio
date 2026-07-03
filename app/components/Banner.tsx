@@ -47,8 +47,18 @@ export default function Banner(): React.JSX.Element {
   return (
     <section
       id="home"
-      className="min-h-screen flex items-center justify-center pt-32 pb-12 px-6"
+      className="relative min-h-screen flex items-center justify-center pt-32 pb-12 px-6"
     >
+      <video
+        autoPlay
+        muted
+        loop
+        playsInline
+        className="rotate-180 absolute top-[-340px] left-0 w-full h-full object-cover -z-20 pointer-events-none"
+      >
+        <source src="/videos/blackhole.webm" type="video/webm" />
+      </video>
+
       <div className="container mx-auto max-w-6xl">
         <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-24">
           {/* Left side - Text content */}

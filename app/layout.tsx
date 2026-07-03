@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Poppins } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next"
+import { StarsCanvas } from "./components/StarsBackground";
 
 import "./globals.css";
 
@@ -74,6 +75,7 @@ export default function RootLayout({
       <body
         className={`${poppins.variable} font-sans antialiased`}
       >
+        <StarsCanvas />
         {children}
         <Analytics />
       </body>
