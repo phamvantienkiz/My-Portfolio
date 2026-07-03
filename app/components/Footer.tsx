@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Footer(): React.JSX.Element {
   return (
-    <footer id="contact" className="py-10  px-6 border-t border-white/10">
+    <footer id="contact" className="py-10 px-6 bg-[#2a0e61]/15 backdrop-blur-[2px] relative">
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-12">
           <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
@@ -70,7 +70,7 @@ export default function Footer(): React.JSX.Element {
           </Link>
         </div>
 
-        <div className="text-center mt-12 pt-8 border-t border-white/10">
+        <div className="text-center mt-12 pt-8">
           <p className="text-white/60 text-sm">
             © {new Date().getFullYear()} Pham Van Tien. All rights reserved.
           </p>

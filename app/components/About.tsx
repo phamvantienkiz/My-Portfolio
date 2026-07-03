@@ -51,7 +51,7 @@ const skillCategories: SkillCategory[] = [
 
 export default function About(): React.JSX.Element {
   return (
-    <section id="about" className="py-20 px-6 bg-gradient-to-b from-[#110720] via-slate-950 to-[#110720]">
+    <section id="about" className="py-20 px-6 bg-transparent relative">
       <div className="container mx-auto max-w-6xl">
         <h2 className="text-4xl lg:text-5xl font-bold text-white mb-12 text-center">
           About &amp; Tech Stack

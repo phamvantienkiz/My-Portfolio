@@ -27,7 +27,7 @@ const featuredProjects: Project[] = [
 
 export default function Projects(): React.JSX.Element {
   return (
-    <section id="lab" className="py-20 px-6">
+    <section id="lab" className="py-20 px-6 bg-[#2a0e61]/15 backdrop-blur-[2px] relative">
       <div className="container mx-auto max-w-7xl">
         {featuredProjects.map((project, index) => {
           const isEven = index % 2 === 1;

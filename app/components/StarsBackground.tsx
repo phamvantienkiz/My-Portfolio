@@ -23,12 +23,12 @@ function generateSpherePoints(numPoints: number, radius: number): Float32Array {
 
 export const StarBackground = (props: any) => {
   const ref = useRef<PointsType | null>(null);
-  const [sphere] = useState(() => generateSpherePoints(5000, 1.2));
+  const [sphere] = useState(() => generateSpherePoints(2500, 1.2));
 
   useFrame((_state, delta) => {
     if (ref.current) {
-      ref.current.rotation.x -= delta / 10;
-      ref.current.rotation.y -= delta / 15;
+      ref.current.rotation.x -= delta / 25;
+      ref.current.rotation.y -= delta / 35;
     }
   });
 

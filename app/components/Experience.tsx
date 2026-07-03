@@ -49,7 +49,7 @@ const experienceCards: ExperienceCard[] = [
 
 export default function Experience(): React.JSX.Element {
   return (
-    <section id="experience" className="py-20 px-6">
+    <section id="experience" className="py-20 px-6 bg-[#2a0e61]/15 backdrop-blur-[2px] relative">
       <div className="container mx-auto max-w-6xl">
         <h2 className="text-4xl lg:text-5xl font-bold text-white mb-12 text-center">
           Work Experience
