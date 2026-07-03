@@ -66,12 +66,12 @@ export default function Banner(): React.JSX.Element {
                   </div>
                 </div>
               </div>
-              <div className="relative w-[280px] h-[280px] sm:w-[320px] sm:h-[320px] rounded-full overflow-hidden border-4 border-purple-500/30 shadow-[0_0_50px_rgba(168,85,247,0.4)] hover:border-purple-500/60 hover:shadow-[0_0_60px_rgba(168,85,247,0.6)] transition-all duration-500">
+              <div className="relative w-[220px] h-[220px] sm:w-[260px] sm:h-[260px] rounded-full overflow-hidden border-4 border-purple-500/30 shadow-[0_0_50px_rgba(168,85,247,0.4)] hover:border-purple-500/60 hover:shadow-[0_0_60px_rgba(168,85,247,0.6)] transition-all duration-500">
                 <Image
                   src="/assets/avata.png"
                   alt="Pham Van Tien - AI Engineer & Co-founder of AIOS"
                   fill
-                  sizes="(max-width: 640px) 280px, 320px"
+                  sizes="(max-width: 640px) 220px, 260px"
                   className="object-cover"
                   priority
                 />
@@ -109,7 +109,7 @@ export default function Banner(): React.JSX.Element {
           </div>
         </div>
 
-        <div className="space-y-4 pt-16 text-center lg:text-left">
+        <div className="space-y-4 pt-8 text-center lg:text-left">
           <p className="text-2xl sm:text-3xl text-white font-bold min-h-[40px]">
             I&apos;m a {displayedText}
             <span className="animate-pulse">|</span>
