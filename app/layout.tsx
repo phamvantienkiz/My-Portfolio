@@ -68,12 +68,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <head>
         <link rel="canonical" href="https://phamvantien.dev" />
       </head>
       <body
         className={`${poppins.variable} font-sans antialiased`}
+        suppressHydrationWarning
       >
         <StarsCanvas />
         {children}
