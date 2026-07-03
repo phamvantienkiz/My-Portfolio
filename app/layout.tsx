@@ -12,34 +12,35 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Ibrahim Memon - Software Engineer & UI/UX Designer",
-  description: "A self-taught UI/UX designer and Software Engineer at WebHR. Creating meaningful and delightful digital products that balance user needs and business goals. 3+ years of industry experience.",
+  title: "Pham Van Tien - AI Engineer & Co-founder of AIOS",
+  description: "AI Engineer with hands-on experience in delivering production-ready Computer Vision, AIoT, and AI Agent products. Co-founder of AIOS.",
   keywords: [
-    "Ibrahim Memon",
-    "Software Engineer",
-    "UI/UX Designer",
-    "Frontend Developer",
-    "React Developer",
-    "Next.js Developer",
-    "Web Designer",
-    "WebHR Engineer",
+    "Pham Van Tien",
+    "AI Engineer",
+    "AIOS",
+    "Co-founder",
+    "AI Fullstack",
+    "Machine Learning Engineer",
+    "Computer Vision",
+    "AI Agents",
+    "Deep Learning",
     "Portfolio",
   ],
-  authors: [{ name: "Ibrahim Memon" }],
-  creator: "Ibrahim Memon",
-  publisher: "Ibrahim Memon",
+  authors: [{ name: "Pham Van Tien" }],
+  creator: "Pham Van Tien",
+  publisher: "Pham Van Tien",
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://ibiimemon.com",
-    title: "Ibrahim Memon - Software Engineer & UI/UX Designer",
-    description: "A self-taught UI/UX designer and Software Engineer at WebHR. Creating meaningful and delightful digital products.",
-    siteName: "Ibrahim Memon Portfolio",
+    url: "https://phamvantien.dev",
+    title: "Pham Van Tien - AI Engineer & Co-founder of AIOS",
+    description: "AI Engineer with hands-on experience in delivering production-ready Computer Vision, AIoT, and AI Agent products. Co-founder of AIOS.",
+    siteName: "Pham Van Tien Portfolio",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Ibrahim Memon - Software Engineer & UI/UX Designer",
-    description: "A self-taught UI/UX designer and Software Engineer at WebHR.",
+    title: "Pham Van Tien - AI Engineer & Co-founder of AIOS",
+    description: "AI Engineer with hands-on experience in delivering production-ready Computer Vision, AIoT, and AI Agent products. Co-founder of AIOS.",
   },
   robots: {
     index: true,
@@ -68,7 +69,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="canonical" href="https://ibiimemon.com" />
+        <link rel="canonical" href="https://phamvantien.dev" />
       </head>
       <body
         className={`${poppins.variable} font-sans antialiased`}

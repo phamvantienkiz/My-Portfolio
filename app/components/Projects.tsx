@@ -11,16 +11,16 @@ interface Project {
 const featuredProjects: Project[] = [
   {
     id: 1,
-    title: "NeuraWeb – Futuristic AI Website Landing Design",
-    description: "A sleek, dark-themed AI-powered landing page concept built in Figma. Designed for modern startups and futuristic digital products, it features glowing neon visuals, immersive UI, and a dynamic tone. The design encapsulates the cutting-edge possibilities of AI and tech, offering a glimpse into the future of online experiences for tech-forward companies.",
-    link: "https://www.figma.com/community/file/1441377868897233703/ai-website-landing-design",
+    title: "PODFlow – All-in-One AI Cross-Border Hub",
+    description: "An all-in-one POD Hub that enables global sellers to generate AI designs/mockups and automate fulfillment across multiple platforms (Printify, BurgerPrints) and e-commerce channels (Shopee, TikTok Shop). Built with advanced Generative AI and automated workflow logic. Achieved Top 10 at the AI Cross-border Hackathon 2026 and currently accelerated by the DNES Startup Incubation Program 2026.",
+    link: "https://github.com/phamvantienkiz",
     image: "/projects/project-1.png",
   },
   {
     id: 2,
-    title: "Apple Vision Pro – HR Software Design",
-    description: "A futuristic HR software concept designed for Apple Vision Pro, built in Figma to reimagine attendance, leave tracking, and employee experience - all in one immersive interface.",
-   link: "https://www.figma.com/community/file/1371824014208363481/apple-vision-pro-hr-software-design",
+    title: "Intelligent Digitalization Platform",
+    description: "A secure digital transformation platform optimized for Vietnamese administrative documents, contracts, and tables, achieving a 93.7% metadata extraction accuracy while ensuring strict on-premises data privacy. Architected a high-concurrency system processing 1,000+ pages/day; optimized OCR + SLM pipelines to run efficiently on resource-constrained hardware.",
+    link: "https://github.com/phamvantienkiz",
     image: "/projects/project-2.png",
   },
 ];
