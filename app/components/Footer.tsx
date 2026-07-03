@@ -15,7 +15,7 @@ export default function Footer(): React.JSX.Element {
           </p>
           <a
             href="mailto:pvtienlamk@gmail.com"
-            className="text-md text-purple-400 hover:text-purple-300 transition-colors"
+            className="text-md text-cosmic-neon hover:text-cosmic-ice transition-colors"
           >
             pvtienlamk@gmail.com
           </a>
@@ -27,7 +27,7 @@ export default function Footer(): React.JSX.Element {
             href="https://www.instagram.com/wwen.jin_/"
             target="_blank"
             rel="noopener noreferrer"
-            className="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 border border-purple-500/30 hover:border-purple-500/50 transition-all"
+            className="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 border border-cosmic-blue/30 hover:border-cosmic-neon/50 transition-all"
             aria-label="Instagram"
           >
             <Image
@@ -42,7 +42,7 @@ export default function Footer(): React.JSX.Element {
             href="https://github.com/phamvantienkiz"
             target="_blank"
             rel="noopener noreferrer"
-            className="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 border border-purple-500/30 hover:border-purple-500/50 transition-all"
+            className="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 border border-cosmic-blue/30 hover:border-cosmic-neon/50 transition-all"
             aria-label="GitHub"
           >
             <svg
@@ -57,7 +57,7 @@ export default function Footer(): React.JSX.Element {
             href="https://www.linkedin.com/in/vtienph/"
             target="_blank"
             rel="noopener noreferrer"
-            className="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 border border-purple-500/30 hover:border-purple-500/50 transition-all"
+            className="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 border border-cosmic-blue/30 hover:border-cosmic-neon/50 transition-all"
             aria-label="LinkedIn"
           >
             <svg

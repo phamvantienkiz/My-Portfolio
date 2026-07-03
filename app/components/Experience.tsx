@@ -58,7 +58,7 @@ export default function Experience(): React.JSX.Element {
           {experienceCards.map((card) => (
             <div
               key={card.id}
-              className="bg-gradient-to-r from-slate-950 via-purple-950 to-slate-950 backdrop-blur-sm rounded-xl p-6 border-t-3 border-purple-700 hover:shadow-2xl hover:shadow-purple-900 flex items-start gap-4"
+              className="bg-gradient-to-r from-slate-950 via-cosmic-dark/60 to-slate-950 backdrop-blur-sm rounded-xl p-6 border-t-3 border-cosmic-blue hover:shadow-2xl hover:shadow-cosmic-blue/30 flex items-start gap-4"
             >
               <div className="mb-4 flex-shrink-0">
                 <Image
@@ -71,7 +71,7 @@ export default function Experience(): React.JSX.Element {
                 />
               </div>
               <div className="flex-1">
-                <span className="text-xs text-purple-400 font-semibold tracking-wider block mb-1">
+                <span className="text-xs text-cosmic-neon font-semibold tracking-wider block mb-1">
                   {card.date}
                 </span>
                 <h3 className="text-xl font-bold text-white mb-0.5">
@@ -88,7 +88,7 @@ export default function Experience(): React.JSX.Element {
                     href={card.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-purple-400 hover:text-purple-300 font-semibold text-xs tracking-wider transition-colors inline-block"
+                    className="text-cosmic-neon hover:text-cosmic-ice font-semibold text-xs tracking-wider transition-colors inline-block"
                   >
                     LEARN MORE →
                   </Link>
