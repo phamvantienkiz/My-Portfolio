@@ -54,7 +54,7 @@ export default function Banner(): React.JSX.Element {
         muted
         loop
         playsInline
-        className="rotate-180 absolute top-[-17vw] left-0 w-full h-full object-cover -z-20 pointer-events-none"
+        className="rotate-180 absolute top-[-200px] md:top-[calc(65px-20vw)] left-0 w-full h-full object-cover -z-20 pointer-events-none"
       >
         <source src="/videos/blackhole.webm" type="video/webm" />
       </video>
