@@ -54,13 +54,10 @@ export default function Banner(): React.JSX.Element {
         muted
         loop
         playsInline
-        className="rotate-180 absolute top-[-240px] left-0 w-full h-full object-cover -z-20 pointer-events-none"
+        className="rotate-180 absolute top-[-17vw] left-0 w-full h-full object-cover -z-20 pointer-events-none"
       >
         <source src="/videos/blackhole.webm" type="video/webm" />
       </video>
-
-      {/* Purple transparent background overlay for the bottom part of Banner */}
-      <div className="absolute bottom-0 left-0 right-0 top-[50%] lg:top-[40%] bg-gradient-to-b from-transparent to-[#2a0e61]/15 backdrop-blur-[2px] pointer-events-none" />
 
       <div className="container mx-auto max-w-6xl">
         <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-24">
