@@ -13,9 +13,13 @@ const skillCategories: SkillCategory[] = [
   {
     title: "AI & Machine Learning",
     skills: [
-      "Computer Vision (Detection & Segmentation)",
-      "Generative AI",
-      "LLMs & RAG",
+      "Detection",
+      "Segmentation",
+      "Tracking",
+      "OCR",
+      "LLM",
+      "VLM",
+      "RAG",
       "AI Agents",
     ],
   },
@@ -25,23 +29,33 @@ const skillCategories: SkillCategory[] = [
       "PyTorch",
       "Tensorflow",
       "LangChain",
+      "LangGraph",
       "Hugging Face",
       "YOLO",
-      "MMDetection",
-      "ONNX Runtime",
+      "OpenMMLab",
+      "ONNX",
       "FastAPI",
       "OpenCV",
       "vLLM",
       "llama.cpp",
+      "Next.js",
     ],
   },
   {
     title: "Tools & Platforms",
     skills: [
       "Git",
+      "Linux",
       "Docker",
-      "AWS / Azure",
+      "MLflow",
+      "AWS",
+      "Azure",
+      "SQLite",
+      "MySQL",
+      "PostgreSQL",
+      "Redis",
       "FAISS",
+      "ChromaDB",
       "Pinecone",
       "Raspberry Pi",
       "Postman",
@@ -56,46 +70,60 @@ export default function About(): React.JSX.Element {
         <h2 className="text-4xl lg:text-5xl font-bold text-white mb-12 text-center">
           About &amp; Tech Stack
         </h2>
-        
+
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-start">
           {/* Bio & Awards Column */}
           <div className="lg:col-span-1 space-y-8">
             <div className="space-y-4">
-              <h3 className="text-2xl font-semibold text-[#55d5f0]">Who I Am</h3>
+              <h3 className="text-2xl font-semibold text-[#55d5f0]">
+                Who I Am
+              </h3>
               <p className="text-white/80 leading-relaxed text-base">
-                I am an AI Engineer driven by the ambition to bridge cutting-edge research with production-grade software solutions. I specialize in end-to-end Machine Learning pipelines, real-time Computer Vision, and highly interactive AI Agent architectures.
+                I am an AI Engineer driven by the ambition to bridge
+                cutting-edge research with production-grade software solutions.
+                I specialize in end-to-end Machine Learning pipelines, real-time
+                Computer Vision, and highly interactive AI Agent architectures.
               </p>
               <p className="text-white/80 leading-relaxed text-base">
-                Currently co-founding <strong className="text-white">AIOS</strong>, a start-up dedicated to automating complex business and e-commerce workflows with next-gen AI.
+                Currently co-founding{" "}
+                <strong className="text-white">AIOS</strong>, a start-up
+                dedicated to automating complex business and e-commerce
+                workflows with next-gen AI.
               </p>
             </div>
 
             <div className="space-y-4 pt-4 border-t border-white/10">
-              <h3 className="text-xl font-semibold text-[#55d5f0]">Awards &amp; Recognition</h3>
+              <h3 className="text-xl font-semibold text-[#55d5f0]">
+                Awards &amp; Recognition
+              </h3>
               <ul className="space-y-3 text-sm text-white/80">
                 <li className="flex items-start gap-2">
                   <span className="text-yellow-500">🏆</span>
                   <div>
-                    <strong className="text-white">Encouragement Prize</strong> – HDBank Hackathon 2023
+                    <strong className="text-white">Encouragement Prize</strong>{" "}
+                    – HDBank Hackathon 2023
                   </div>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-yellow-500">🏆</span>
                   <div>
-                    <strong className="text-white">Third Prize</strong> – Expert Challenge Season 4 (2022)
+                    <strong className="text-white">Third Prize</strong> – Expert
+                    Challenge Season 4 (2022)
                   </div>
                 </li>
               </ul>
             </div>
-            
+
             <div className="space-y-4 pt-4 border-t border-white/10">
-              <h3 className="text-xl font-semibold text-[#55d5f0]">Languages</h3>
+              <h3 className="text-xl font-semibold text-[#55d5f0]">
+                Languages
+              </h3>
               <div className="flex gap-3 flex-wrap text-sm text-white/90">
                 <span className="bg-[#011a39]/40 border border-[#1f9acf]/20 px-3 py-1 rounded-full">
-                  🇻🇳 Vietnamese (Native)
+                  Vietnamese (Native)
                 </span>
                 <span className="bg-[#011a39]/40 border border-[#1f9acf]/20 px-3 py-1 rounded-full">
-                  🇬🇧 English (B1 Level - VSTEP)
+                  English (B1 Level - VSTEP)
                 </span>
               </div>
             </div>
@@ -104,7 +132,7 @@ export default function About(): React.JSX.Element {
           {/* Technical Skills Categories */}
           <div className="lg:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-6">
             {skillCategories.map((category, idx) => (
-              <div 
+              <div
                 key={idx}
                 className="bg-slate-950/50 backdrop-blur-sm p-6 rounded-2xl border border-white/5 hover:border-[#1f9acf]/30 transition-all duration-300 shadow-lg"
               >
@@ -114,7 +142,7 @@ export default function About(): React.JSX.Element {
                 </h4>
                 <div className="flex flex-wrap gap-2">
                   {category.skills.map((skill, skillIdx) => (
-                    <span 
+                    <span
                       key={skillIdx}
                       className="bg-white/5 hover:bg-[#1f9acf]/20 text-white/90 hover:text-white px-3 py-1 rounded-lg text-sm border border-white/10 hover:border-[#1f9acf]/30 transition-all duration-200"
                     >
@@ -130,4 +158,3 @@ export default function About(): React.JSX.Element {
     </section>
   );
 }
-
