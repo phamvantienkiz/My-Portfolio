@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Header(): React.JSX.Element {
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-[#110720]/15 backdrop-blur-md border-b border-white/10 shadow-lg shadow-[#2a0e61]/50">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-[#030014]/15 backdrop-blur-md border-b border-white/10 shadow-lg shadow-[#2a0e61]/50">
       <nav className="px-6 py-3">
         <div className="container mx-auto max-w-6xl flex items-center justify-between h-full">
           <Link 
