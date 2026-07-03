@@ -67,6 +67,7 @@ export default function Experience(): React.JSX.Element {
                   width={64}
                   height={64}
                   className="object-contain"
+                  style={{ height: "auto" }}
                 />
               </div>
               <div className="flex-1">
