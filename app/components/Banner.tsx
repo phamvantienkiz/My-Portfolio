@@ -72,12 +72,12 @@ export default function Banner(): React.JSX.Element {
                   <div className="relative">
                     <p className="text-white text-sm whitespace-nowrap">
                       Hello! I Am{" "}
-                      <span className="text-cosmic-neon font-semibold">Pham Van Tien</span>
+                      <span className="text-[#55d5f0] font-semibold">Pham Van Tien</span>
                     </p>
                   </div>
                 </div>
               </div>
-              <div className="relative w-[220px] h-[220px] sm:w-[260px] sm:h-[260px] rounded-full overflow-hidden border-4 border-cosmic-blue/30 shadow-[0_0_50px_rgba(85,213,240,0.4)] hover:border-cosmic-neon/60 hover:shadow-[0_0_60px_rgba(85,213,240,0.6)] transition-all duration-500">
+              <div className="relative w-[220px] h-[220px] sm:w-[260px] sm:h-[260px] rounded-full overflow-hidden border-4 border-[#1f9acf]/30 shadow-[0_0_50px_rgba(85,213,240,0.4)] hover:border-[#55d5f0]/60 hover:shadow-[0_0_60px_rgba(85,213,240,0.6)] transition-all duration-500">
                 <Image
                   src="/assets/avata.png"
                   alt="Pham Van Tien - AI Engineer & Co-founder of AIOS"
@@ -96,7 +96,7 @@ export default function Banner(): React.JSX.Element {
               <div className="relative inline-block bg-white/5 border border-white/10 px-4 py-2 rounded-xl backdrop-blur-sm">
                 <p className="text-white text-sm">
                   Hello! I Am{" "}
-                  <span className="text-cosmic-neon font-semibold">Pham Van Tien</span>
+                  <span className="text-[#55d5f0] font-semibold">Pham Van Tien</span>
                 </p>
               </div>
             </div>
@@ -107,7 +107,7 @@ export default function Banner(): React.JSX.Element {
                 <br /> into{" "}
                 <span className="relative inline-block">
                   <Image src="/assets/circle.png" alt="Circle" width={150} height={150} className="absolute mt-2" style={{ width: "auto", height: "auto" }} />
-                  <span className="bg-gradient-to-r from-cosmic-blue via-cosmic-neon to-cosmic-blue bg-clip-text text-transparent">
+                  <span className="bg-gradient-to-r from-[#1f9acf] via-[#55d5f0] to-[#1f9acf] bg-clip-text text-transparent">
                     data
                   </span>
                 </span>
@@ -128,7 +128,7 @@ export default function Banner(): React.JSX.Element {
           <div className="text-sm lg:text-base text-white/90 tracking-wide flex flex-wrap items-center justify-center lg:justify-start gap-2">
             <span>Currently, I&apos;m a Co-founder &amp; AI Engineer at</span>
             <span className="flex items-center gap-2">
-              <span className="text-cosmic-neon font-bold bg-cosmic-neon/10 px-2 py-0.5 rounded border border-cosmic-neon/30">AIOS</span>
+              <span className="text-[#55d5f0] font-bold bg-[#55d5f0]/10 px-2 py-0.5 rounded border border-[#55d5f0]/30">AIOS</span>
             </span>
             <span>based in Ho Chi Minh City, Vietnam 🇻🇳</span>
           </div>

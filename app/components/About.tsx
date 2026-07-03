@@ -61,7 +61,7 @@ export default function About(): React.JSX.Element {
           {/* Bio & Awards Column */}
           <div className="lg:col-span-1 space-y-8">
             <div className="space-y-4">
-              <h3 className="text-2xl font-semibold text-cosmic-neon">Who I Am</h3>
+              <h3 className="text-2xl font-semibold text-[#55d5f0]">Who I Am</h3>
               <p className="text-white/80 leading-relaxed text-base">
                 I am an AI Engineer driven by the ambition to bridge cutting-edge research with production-grade software solutions. I specialize in end-to-end Machine Learning pipelines, real-time Computer Vision, and highly interactive AI Agent architectures.
               </p>
@@ -71,7 +71,7 @@ export default function About(): React.JSX.Element {
             </div>
 
             <div className="space-y-4 pt-4 border-t border-white/10">
-              <h3 className="text-xl font-semibold text-cosmic-neon">Awards &amp; Recognition</h3>
+              <h3 className="text-xl font-semibold text-[#55d5f0]">Awards &amp; Recognition</h3>
               <ul className="space-y-3 text-sm text-white/80">
                 <li className="flex items-start gap-2">
                   <span className="text-yellow-500">🏆</span>
@@ -89,12 +89,12 @@ export default function About(): React.JSX.Element {
             </div>
             
             <div className="space-y-4 pt-4 border-t border-white/10">
-              <h3 className="text-xl font-semibold text-cosmic-neon">Languages</h3>
+              <h3 className="text-xl font-semibold text-[#55d5f0]">Languages</h3>
               <div className="flex gap-3 flex-wrap text-sm text-white/90">
-                <span className="bg-cosmic-dark/40 border border-cosmic-blue/20 px-3 py-1 rounded-full">
+                <span className="bg-[#011a39]/40 border border-[#1f9acf]/20 px-3 py-1 rounded-full">
                   🇻🇳 Vietnamese (Native)
                 </span>
-                <span className="bg-cosmic-dark/40 border border-cosmic-blue/20 px-3 py-1 rounded-full">
+                <span className="bg-[#011a39]/40 border border-[#1f9acf]/20 px-3 py-1 rounded-full">
                   🇬🇧 English (B1 Level - VSTEP)
                 </span>
               </div>
@@ -106,17 +106,17 @@ export default function About(): React.JSX.Element {
             {skillCategories.map((category, idx) => (
               <div 
                 key={idx}
-                className="bg-slate-950/50 backdrop-blur-sm p-6 rounded-2xl border border-white/5 hover:border-cosmic-blue/30 transition-all duration-300 shadow-lg"
+                className="bg-slate-950/50 backdrop-blur-sm p-6 rounded-2xl border border-white/5 hover:border-[#1f9acf]/30 transition-all duration-300 shadow-lg"
               >
                 <h4 className="text-lg font-bold text-white mb-4 border-b border-white/10 pb-2 flex items-center justify-between">
                   <span>{category.title}</span>
-                  <span className="w-2 h-2 rounded-full bg-cosmic-neon animate-pulse"></span>
+                  <span className="w-2 h-2 rounded-full bg-[#55d5f0] animate-pulse"></span>
                 </h4>
                 <div className="flex flex-wrap gap-2">
                   {category.skills.map((skill, skillIdx) => (
                     <span 
                       key={skillIdx}
-                      className="bg-white/5 hover:bg-cosmic-blue/20 text-white/90 hover:text-white px-3 py-1 rounded-lg text-sm border border-white/10 hover:border-cosmic-blue/30 transition-all duration-200"
+                      className="bg-white/5 hover:bg-[#1f9acf]/20 text-white/90 hover:text-white px-3 py-1 rounded-lg text-sm border border-white/10 hover:border-[#1f9acf]/30 transition-all duration-200"
                     >
                       {skill}
                     </span>

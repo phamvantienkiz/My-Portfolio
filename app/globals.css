@@ -9,13 +9,6 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-poppins), sans-serif;
-  
-  --color-cosmic-dark: #011a39;
-  --color-cosmic-blue: #1d6da6;
-  --color-cosmic-light-blue: #2b8fc7;
-  --color-cosmic-cyan: #3eb1de;
-  --color-cosmic-neon: #55d5f0;
-  --color-cosmic-ice: #c7e7f4;
 }
 
 * {
