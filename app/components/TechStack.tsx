@@ -74,7 +74,7 @@ export default function TechStack(): React.JSX.Element {
           {skillCategories.map((category, idx) => (
             <div
               key={idx}
-              className="bg-slate-950/50 backdrop-blur-sm p-6 rounded-2xl border border-white/5 hover:border-[#1f9acf]/30 transition-all duration-300 shadow-lg"
+              className="bg-slate-950/20 p-6 rounded-2xl border border-white/5 hover:border-[#1f9acf]/30 transition-all duration-300 shadow-lg"
             >
               <h4 className="text-lg font-bold text-white mb-4 border-b border-white/10 pb-2 flex items-center justify-between">
                 <span>{category.title}</span>
