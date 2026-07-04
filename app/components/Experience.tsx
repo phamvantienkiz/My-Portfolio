@@ -17,7 +17,8 @@ const experienceCards: ExperienceCard[] = [
     company: "AIOS (Start-up / Co-founder)",
     role: "Co-founder & AI Fullstack",
     date: "May 2026 - Present",
-    description: "Co-founded AIOS, providing high-efficiency AI systems. Built PODFlow (Top 10 AI Hackathon 2026) for cross-border e-commerce automation and designed secure high-concurrency document OCR & metadata extraction platforms.",
+    description:
+      "Co-founded AIOS, providing high-efficiency AI systems. Built PODFlow (Top 10 AI Hackathon 2026) for cross-border e-commerce automation and designed secure high-concurrency document OCR & metadata extraction platforms.",
     icon: "/cards/card-1.png",
     link: "https://github.com/phamvantienkiz",
   },
@@ -26,7 +27,8 @@ const experienceCards: ExperienceCard[] = [
     company: "MEBISOFT",
     role: "AI Development Lead",
     date: "Nov 2025 - April 2026",
-    description: "Led AI developments. Integrated custom LLM-powered workflow automation agents (Wiki AI) inside MS Teams. Built aquaculture computer vision models (shrimp counting, biomass estimation) and drones/IP camera farm auditing tools.",
+    description:
+      "Lead AI developments. Integrated custom LLM-powered workflow automation agents (Wiki AI) inside MS Teams. Built aquaculture computer vision models (shrimp counting, biomass estimation) and drones/IP camera farm auditing tools.",
     icon: "/cards/card-2.png",
   },
   {
@@ -34,7 +36,8 @@ const experienceCards: ExperienceCard[] = [
     company: "ACACY",
     role: "AI Engineer",
     date: "Aug 2025 - Oct 2025",
-    description: "Architected data post-labeling pipelines for 100+ SKUs. Fine-tuned YOLOX, YOLO-NAS, and Mask R-CNN models to achieve 94.27% accuracy in monitoring Unilever store shelves, executing extensive accuracy-latency analysis.",
+    description:
+      "Architected data post-labeling pipelines for 100+ SKUs. Fine-tuned YOLOX, YOLO-NAS, and Mask R-CNN models to achieve 94.27% accuracy in monitoring Unilever store shelves, executing extensive accuracy-latency analysis.",
     icon: "/cards/card-3.png",
   },
   {
@@ -42,7 +45,8 @@ const experienceCards: ExperienceCard[] = [
     company: "BITTO SOLUTIONS",
     role: "AI Engineer Intern",
     date: "April 2025 - July 2025",
-    description: "Architected Bedrock-powered RAG systems. Researched and optimized semantic vs. fixed-size document chunking strategies and prompt instructions to deliver highly accurate context-aware responses.",
+    description:
+      "Architected Bedrock-powered RAG systems. Researched and optimized semantic vs. fixed-size document chunking strategies and prompt instructions to deliver highly accurate context-aware responses.",
     icon: "/cards/card-4.png",
   },
 ];
@@ -54,7 +58,7 @@ export default function Experience(): React.JSX.Element {
         <h2 className="text-4xl lg:text-5xl font-bold text-white mb-16 text-center">
           Work Experience
         </h2>
-        
+
         <div className="relative">
           {/* Timeline Vertical Line */}
           <div className="absolute left-8 md:left-1/2 top-2 bottom-2 w-0.5 md:-translate-x-1/2 bg-gradient-to-b from-[#1f9acf] via-[#55d5f0]/50 to-[#011a39]/10 rounded-full" />
@@ -79,7 +83,12 @@ export default function Experience(): React.JSX.Element {
                         width={28}
                         height={28}
                         className="object-contain rounded"
-                        style={{ width: "auto", height: "auto", maxWidth: "24px", maxHeight: "24px" }}
+                        style={{
+                          width: "auto",
+                          height: "auto",
+                          maxWidth: "24px",
+                          maxHeight: "24px",
+                        }}
                       />
                     </div>
                   </div>
@@ -108,7 +117,7 @@ export default function Experience(): React.JSX.Element {
                       <p className="text-white/70 text-sm leading-relaxed mb-4">
                         {card.description}
                       </p>
-                      {card.link && (
+                      {/* {card.link && (
                         <Link
                           href={card.link}
                           target="_blank"
@@ -117,7 +126,7 @@ export default function Experience(): React.JSX.Element {
                         >
                           LEARN MORE →
                         </Link>
-                      )}
+                      )} */}
                     </div>
                   </div>
                 </div>
@@ -129,4 +138,3 @@ export default function Experience(): React.JSX.Element {
     </section>
   );
 }
-
