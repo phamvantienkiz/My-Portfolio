@@ -50,7 +50,7 @@ const experienceCards: ExperienceCard[] = [
 export default function Experience(): React.JSX.Element {
   return (
     <section id="experience" className="py-20 px-6">
-      <div className="container mx-auto max-w-5xl">
+      <div className="container mx-auto max-w-6xl">
         <h2 className="text-4xl lg:text-5xl font-bold text-white mb-16 text-center">
           Work Experience
         </h2>
@@ -85,11 +85,11 @@ export default function Experience(): React.JSX.Element {
                   </div>
 
                   {/* Empty Space for Desktop Alignment */}
-                  <div className="hidden md:block w-[calc(50%-2.5rem)]" />
+                  <div className="hidden md:block w-[calc(50%-2rem)]" />
 
                   {/* Experience Content Card */}
                   <div
-                    className={`w-[calc(100%-5rem)] ml-20 md:ml-0 md:w-[calc(50%-2.5rem)] bg-gradient-to-r from-[#011a39]/60 via-slate-950/80 to-slate-950 border-l-3 border-[#1f9acf] backdrop-blur-sm rounded-xl p-6 hover:shadow-2xl hover:shadow-[#1f9acf]/20 transition-all duration-300 ${
+                    className={`w-[calc(100%-4rem)] ml-16 md:ml-0 md:w-[calc(50%-2rem)] bg-gradient-to-r from-[#011a39]/60 via-slate-950/80 to-slate-950 border-l-3 border-[#1f9acf] backdrop-blur-sm rounded-xl p-6 hover:shadow-2xl hover:shadow-[#1f9acf]/20 transition-all duration-300 ${
                       isEven
                         ? "md:bg-gradient-to-l md:border-l-0 md:border-r-3"
                         : ""
