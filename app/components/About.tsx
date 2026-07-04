@@ -49,7 +49,7 @@ const skillCategories: SkillCategory[] = [
       "Docker",
       "MLflow",
       "AWS",
-      "Azure",
+      "Firebase",
       "SQLite",
       "MySQL",
       "PostgreSQL",
