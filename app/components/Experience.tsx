@@ -89,7 +89,7 @@ export default function Experience(): React.JSX.Element {
 
                   {/* Experience Content Card */}
                   <div
-                    className={`w-[calc(100%-4rem)] ml-16 md:ml-0 md:w-[calc(50%-2rem)] bg-gradient-to-r from-[#011a39]/50 via-slate-950/70 to-slate-950/50 border-l-3 border-[#1f9acf] backdrop-blur-sm rounded-xl p-6 hover:shadow-2xl hover:shadow-[#1f9acf]/20 transition-all duration-300 ${
+                    className={`w-[calc(100%-4rem)] ml-16 md:ml-0 md:w-[calc(50%-2rem)] bg-gradient-to-r from-[#011a39]/30 via-slate-950/50 to-slate-950/30 border-l-3 border-[#1f9acf] rounded-xl p-6 hover:shadow-2xl hover:shadow-[#1f9acf]/20 transition-all duration-300 ${
                       isEven
                         ? "md:bg-gradient-to-l md:border-l-0 md:border-r-3"
                         : ""
