@@ -4,7 +4,11 @@ import Image from "next/image";
 import { useState, useEffect } from "react";
 
 export default function Banner(): React.JSX.Element {
-  const texts = ["AI Engineer", "AI Fullstack Developer", "Co-founder of AIOS"];
+  const texts = [
+    "AI Engineer",
+    "AI Fullstack Developer",
+    "AI Solutions Architect",
+  ];
   const [currentTextIndex, setCurrentTextIndex] = useState(0);
   const [displayedText, setDisplayedText] = useState("");
   const [isDeleting, setIsDeleting] = useState(false);
@@ -12,7 +16,7 @@ export default function Banner(): React.JSX.Element {
 
   useEffect(() => {
     const currentText = texts[currentTextIndex];
-    
+
     if (!isDeleting) {
       // Typing effect
       if (displayedText.length < currentText.length) {
@@ -66,17 +70,6 @@ export default function Banner(): React.JSX.Element {
           {/* Right side - Character image */}
           <div className="flex justify-center lg:justify-end relative w-full lg:w-auto order-1 lg:order-2">
             <div className="relative">
-              {/* Mobile: Hello text positioned on top of image */}
-              <div className="lg:hidden mb-6 flex justify-center">
-                <div className="relative inline-block bg-white/5 border border-white/10 px-4 py-2 rounded-xl backdrop-blur-sm">
-                  <div className="relative">
-                    <p className="text-white text-sm whitespace-nowrap">
-                      Hello! I Am{" "}
-                      <span className="text-[#55d5f0] font-semibold">Pham Van Tien</span>
-                    </p>
-                  </div>
-                </div>
-              </div>
               <div className="relative w-[220px] h-[220px] sm:w-[260px] sm:h-[260px] rounded-full overflow-hidden border-4 border-[#1f9acf]/30 shadow-[0_0_50px_rgba(85,213,240,0.4)] hover:border-[#55d5f0]/60 hover:shadow-[0_0_60px_rgba(85,213,240,0.6)] transition-all duration-500">
                 <Image
                   src="/assets/avata.png"
@@ -87,16 +80,31 @@ export default function Banner(): React.JSX.Element {
                   priority
                 />
               </div>
+              {/* Mobile: Hello text positioned below the avatar image */}
+              <div className="lg:hidden mt-6 flex justify-center">
+                <div className="relative inline-block bg-white/5 border border-white/10 px-5 py-2.5 rounded-xl backdrop-blur-sm">
+                  <div className="relative">
+                    <p className="text-white text-base md:text-lg whitespace-nowrap">
+                      Hello! I Am{" "}
+                      <span className="text-[#55d5f0] font-semibold">
+                        Pham Van Tien
+                      </span>
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
           <div className="flex-1 space-y-6 text-center lg:text-left order-2 lg:order-1">
             {/* Desktop: Hello text in original position */}
             <div className="hidden lg:inline-block relative">
-              <div className="relative inline-block bg-white/5 border border-white/10 px-4 py-2 rounded-xl backdrop-blur-sm">
-                <p className="text-white text-sm">
+              <div className="relative inline-block bg-white/5 border border-white/10 px-5 py-2.5 rounded-xl backdrop-blur-sm">
+                <p className="text-white text-base md:text-lg whitespace-nowrap">
                   Hello! I Am{" "}
-                  <span className="text-[#55d5f0] font-semibold">Pham Van Tien</span>
+                  <span className="text-[#55d5f0] font-semibold">
+                    Pham Van Tien
+                  </span>
                 </p>
               </div>
             </div>
@@ -106,7 +114,14 @@ export default function Banner(): React.JSX.Element {
                 Breathes life
                 <br /> into{" "}
                 <span className="relative inline-block">
-                  <Image src="/assets/circle.png" alt="Circle" width={150} height={150} className="absolute mt-2" style={{ width: "auto", height: "auto" }} />
+                  <Image
+                    src="/assets/circle.png"
+                    alt="Circle"
+                    width={150}
+                    height={150}
+                    className="absolute mt-2"
+                    style={{ width: "auto", height: "auto" }}
+                  />
                   <span className="bg-gradient-to-r from-[#1f9acf] via-[#55d5f0] to-[#1f9acf] bg-clip-text text-transparent">
                     data
                   </span>
@@ -114,28 +129,27 @@ export default function Banner(): React.JSX.Element {
                 ...
               </h1>
               <p className="text-xs text-white/60 mt-2">
-                Because intelligence is not just about prediction, it is about building value.
+                Because intelligence is not just about prediction, it is about
+                building value.
               </p>
             </div>
-          </div>
-        </div>
 
-        <div className="space-y-4 pt-8 text-center lg:text-left">
-          <p className="text-2xl sm:text-3xl text-white font-bold min-h-[40px]">
-            I&apos;m a {displayedText}
-            <span className="animate-pulse">|</span>
-          </p>
-          <div className="text-sm lg:text-base text-white/90 tracking-wide flex flex-wrap items-center justify-center lg:justify-start gap-2">
-            <span>Currently, I&apos;m a Co-founder &amp; AI Engineer at</span>
-            <span className="flex items-center gap-2">
-              <span className="text-[#55d5f0] font-bold bg-[#55d5f0]/10 px-2 py-0.5 rounded border border-[#55d5f0]/30">AIOS</span>
-            </span>
-            <span>based in Ho Chi Minh City, Vietnam 🇻🇳</span>
+            <div className="space-y-4 pt-4">
+              <p className="text-2xl sm:text-3xl text-white font-bold min-h-[40px]">
+                I&apos;m a {displayedText}
+                <span className="animate-pulse">|</span>
+              </p>
+              <div className="text-sm lg:text-base text-white/90 tracking-wide flex flex-wrap items-center justify-center lg:justify-start gap-2">
+                <span>Currently, I&apos;m a Co-founder &amp; AI Engineer at</span>
+                <span className="flex items-center gap-2">
+                  <span className="text-[#55d5f0] font-bold bg-[#55d5f0]/10 px-2 py-0.5 rounded border border-[#55d5f0]/30">
+                    AIOS
+                  </span>
+                </span>
+                <span>based in Ho Chi Minh City, Vietnam 🇻🇳</span>
+              </div>
+            </div>
           </div>
-          <p className="text-sm text-white/80 max-w-2xl mt-4 mx-auto lg:mx-0 leading-relaxed">
-            AI Engineer with hands-on experience in delivering production-ready Computer Vision, AIoT, and AI Agent products.
-            Skilled in end-to-end machine learning engineering, performance optimization, and integrating diverse AI technologies into scalable systems to solve complex real-world challenges.
-          </p>
         </div>
       </div>
     </section>
