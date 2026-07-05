@@ -95,7 +95,7 @@ const projectsData: Project[] = [
     description:
       "An independent project focused on developing a face-recognition-based check-in module. Designed to be lightweight and flexible, it supports quick employee registration via 5 face angles, real-time recognition with low latency, and minimal hardware resource usage. Easily integrable into Mebisoft's internal HR management systems.",
     technologies: ["React", "Vite", "FastAPI", "OpenCV", "ONNX", "SQLite"],
-    githubLink: "https://github.com/phamvantienkiz",
+    githubLink: "https://github.com/vantienp/FaceCheckin",
     media: [
       {
         type: "image",
@@ -143,7 +143,7 @@ const projectsData: Project[] = [
       "Firebase",
       "Tensorflow lite",
     ],
-    githubLink: "https://github.com/phamvantienkiz",
+    githubLink: "https://github.com/phamvantienkiz/fall_detection2025",
     media: [
       {
         type: "video",
