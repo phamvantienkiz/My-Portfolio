@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useState, Suspense } from "react";
+import { useRef, useState, Suspense, ComponentProps } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { Points, PointMaterial } from "@react-three/drei";
 import type { Points as PointsType } from "three";
@@ -21,7 +21,7 @@ function generateSpherePoints(numPoints: number, radius: number): Float32Array {
   return points;
 }
 
-export const StarBackground = (props: any) => {
+export const StarBackground = (props: ComponentProps<typeof Points>) => {
   const ref = useRef<PointsType | null>(null);
   const [sphere] = useState(() => generateSpherePoints(2500, 1.2));
 

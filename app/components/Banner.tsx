@@ -3,12 +3,13 @@
 import Image from "next/image";
 import { useState, useEffect } from "react";
 
+const texts = [
+  "AI Engineer",
+  "AI Fullstack Developer",
+  "AI Solutions Architect",
+];
+
 export default function Banner(): React.JSX.Element {
-  const texts = [
-    "AI Engineer",
-    "AI Fullstack Developer",
-    "AI Solutions Architect",
-  ];
   const [currentTextIndex, setCurrentTextIndex] = useState(0);
   const [displayedText, setDisplayedText] = useState("");
   const [isDeleting, setIsDeleting] = useState(false);
@@ -41,12 +42,15 @@ export default function Banner(): React.JSX.Element {
         return () => clearTimeout(timeout);
       } else {
         // Finished deleting, move to next text
-        setIsDeleting(false);
-        setTypingSpeed(100); // Reset typing speed
-        setCurrentTextIndex((prev) => (prev + 1) % texts.length);
+        const timeout = setTimeout(() => {
+          setIsDeleting(false);
+          setTypingSpeed(100); // Reset typing speed
+          setCurrentTextIndex((prev) => (prev + 1) % texts.length);
+        }, 500);
+        return () => clearTimeout(timeout);
       }
     }
-  }, [displayedText, isDeleting, currentTextIndex, texts, typingSpeed]);
+  }, [displayedText, isDeleting, currentTextIndex, typingSpeed]);
 
   return (
     <section
