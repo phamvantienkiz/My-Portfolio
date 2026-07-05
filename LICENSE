@@ -1,0 +1,35 @@
+Custom Software License with Design & Visual Identity Restrictions
+
+Copyright (c) 2026 Pham Van Tien
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, and/or sell copies of the
+Software, and to permit persons to whom the Software is furnished to do so,
+subject to the following conditions:
+
+1. CODE USAGE & MODIFICATION:
+   You are free to use, modify, study, adapt, and distribute the source code
+   of this repository for personal, educational, or commercial projects.
+
+2. VISUAL IDENTITY RESTRICTIONS (DESIGN COPYRIGHT):
+   You are STRICTLY PROHIBITED from copying, cloning, or reproducing the visual
+   design, layout, specific color schemes, custom branding, or assets of this
+   portfolio exactly to create an identical clone. If you use this repository
+   to host your own portfolio, you must customize the styling, colors, content,
+   assets, and branding to reflect your own unique professional identity.
+
+3. DESIGN REFERENCES & ATTRIBUTION:
+   This project references and derives visual/functional design inspiration from
+   the following open-source repositories:
+   - Ibrahim Memon's Figma Portfolio: https://github.com/ibrahimmemonn/Figma-Portfolio
+   - Sanidhyy's Space Portfolio: https://github.com/sanidhyy/space-portfolio
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
