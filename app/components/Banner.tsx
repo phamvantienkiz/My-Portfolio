@@ -144,13 +144,20 @@ export default function Banner(): React.JSX.Element {
                 <span className="animate-pulse">|</span>
               </p>
               <div className="text-sm lg:text-base text-white/90 tracking-wide flex flex-wrap items-center justify-center lg:justify-start gap-2">
-                <span>Currently, I&apos;m a Co-founder &amp; AI Engineer at</span>
+                {/* <span>Currently, I&apos;m a freelance &amp; AI Engineer at</span> */}
+                <span>
+                  Currently, I&apos;m working as a freelance AI Engineer and
+                  Co-founder at
+                </span>
                 <span className="flex items-center gap-2">
                   <span className="text-[#55d5f0] font-bold bg-[#55d5f0]/10 px-2 py-0.5 rounded border border-[#55d5f0]/30">
                     AIOS
                   </span>
                 </span>
-                <span>based in Ho Chi Minh City, Vietnam 🇻🇳</span>
+                <span>
+                  - a freelance engineering collective in Ho Chi Minh City,
+                  Vietnam 🇻🇳
+                </span>
               </div>
             </div>
           </div>

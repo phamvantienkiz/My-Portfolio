@@ -12,20 +12,24 @@ export default function About(): React.JSX.Element {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-start">
           {/* Bio Column */}
           <div className="lg:col-span-2 space-y-6">
-            <h3 className="text-2xl font-semibold text-[#55d5f0]">
-              Who I Am
-            </h3>
+            <h3 className="text-2xl font-semibold text-[#55d5f0]">Who I Am</h3>
             <p className="text-white/80 leading-relaxed text-base">
-              I am an AI Engineer driven by the ambition to bridge
-              cutting-edge research with production-grade software solutions.
-              I specialize in end-to-end Machine Learning pipelines, real-time
-              Computer Vision, and highly interactive AI Agent architectures.
+              I am an AI Engineer driven by the ambition to bridge cutting-edge
+              research with production-grade software solutions. I specialize in
+              end-to-end Machine Learning pipelines, real-time Computer Vision,
+              and highly interactive AI Agent architectures.
             </p>
-            <p className="text-white/80 leading-relaxed text-base">
+            {/* <p className="text-white/80 leading-relaxed text-base">
               Currently co-founding{" "}
               <strong className="text-white">AIOS</strong>, a start-up
               dedicated to automating complex business and e-commerce
               workflows with next-gen AI.
+            </p> */}
+            <p className="text-white/80 leading-relaxed text-base">
+              As the Co-founder of <strong className="text-white">AIOS</strong>,
+              I lead an engineering collective dedicated to empowering
+              businesses and e-commerce platforms through next-gen AI automation
+              and digital transformation.
             </p>
 
             {/* Opportunities & Target Roles */}
@@ -39,7 +43,7 @@ export default function About(): React.JSX.Element {
                   Open for Opportunities
                 </h4>
               </div>
-              
+
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
                 <Link
                   href="#contact"
@@ -116,19 +120,22 @@ export default function About(): React.JSX.Element {
                 <li className="flex items-start gap-2">
                   <span className="text-yellow-500">🏆</span>
                   <div>
-                    <strong className="text-white">Top 10</strong> – AI Cross-border Hackathon 2026
+                    <strong className="text-white">Top 10</strong> – AI
+                    Cross-border Hackathon 2026
                   </div>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-yellow-500">🏆</span>
                   <div>
-                    <strong className="text-white">Encouragement Prize</strong> – HDBank Hackathon 2023
+                    <strong className="text-white">Encouragement Prize</strong>{" "}
+                    – HDBank Hackathon 2023
                   </div>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-yellow-500">🏆</span>
                   <div>
-                    <strong className="text-white">Third Prize</strong> – Expert Challenge Season 4 (2022)
+                    <strong className="text-white">Third Prize</strong> – Expert
+                    Challenge Season 4 (2022)
                   </div>
                 </li>
               </ul>
