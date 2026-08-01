@@ -25,18 +25,16 @@ interface Project {
 const projectsData: Project[] = [
   {
     id: 1,
-    title: "Intelligent Document Processing (IDP)",
+    title: "Intelligent Document Processing",
     description:
-      "A production-ready system deployed for enterprises to automate document processing workflows. The core functionality includes automatically extracting metadata from scanned Vietnamese PDF documents, classifying records based on extraction results, and validating digital signatures as well as red stamp seals. The system achieves high accuracy and is optimized for parallel processing across diverse hardware configurations.",
+      "• Developed an enterprise document digitalization platform specialized for Vietnamese administrative records and archival workloads, ensuring strict on-premises data privacy and domain-specific compliance.\n\n• Architected a high-throughput backend & AI pipeline, optimizing full-pipeline OCR + SLM inference on GPUs to support high-concurrency workloads. Achieved batch execution of 2–8 pages concurrently, reducing total request processing time to 4–8 seconds per page while handling heavy multi-user simultaneous document upload and extraction requests.",
     technologies: [
+      "OCR",
+      "SLM",
       "FastAPI",
       "Next.js",
-      "OCR Pipeline",
-      "SLM",
-      "YOLO",
       "PostgreSQL",
-      "Sglang",
-      "llamacpp",
+      "vLLM",
       "Docker",
     ],
     // GitHub source code is private for this corporate project
@@ -65,7 +63,7 @@ const projectsData: Project[] = [
     id: 2,
     title: "AI Module for Shrimp Hatchery",
     description:
-      "A specialized AI module developed for the aquaculture industry, integrating advanced computer vision technologies to automate shrimp larvae counting, body length measurement, total biomass estimation, and early diagnosis of common shrimp diseases. The system is specifically optimized to achieve high frame-rate processing directly on standard CPU hardware.",
+      "• Optimized an automated shrimp-counting pipeline deployed on CPU-only environments, reducing total end-to-end processing time to 1.37s per request while maintaining 94% accuracy even in high-density conditions with over 83% overlap.\n\n• Developed a high-precision biomass estimation module (RTMDet-Seg + spinal curve mapping), optimized for edge/CPU deployment to achieve a sub-1s response time per request within a 1.5cm margin of error.\n\n• Developed a hybrid deep learning module integrating image segmentation and EfficientNet-B0 with CBAM attention for shrimp disease classification, achieving 95% accuracy (91% recall) in laboratory environments.",
     technologies: ["FastAPI", "OpenMMlab - YOLO", "OpenCV", "ONNX"],
     // GitHub source code is private for this project
     media: [
@@ -91,9 +89,9 @@ const projectsData: Project[] = [
   },
   {
     id: 3,
-    title: "Module Face Check-in System",
+    title: "Face Check-in",
     description:
-      "An independent project focused on developing a face-recognition-based check-in module. Designed to be lightweight and flexible, it supports quick employee registration via 5 face angles, real-time recognition with low latency, and minimal hardware resource usage. Easily integrable into Mebisoft's internal HR management systems.",
+      "An independent project focused on developing a face-recognition-based check-in module. Designed to be lightweight and flexible, it supports quick employee registration via 5 face angles, real-time recognition with low latency, and minimal hardware resource usage. Easily integrable into internal HR management systems.",
     technologies: ["React", "Vite", "FastAPI", "OpenCV", "ONNX", "SQLite"],
     githubLink: "https://github.com/vantienp/FaceCheckin",
     media: [
@@ -132,7 +130,7 @@ const projectsData: Project[] = [
     id: 4,
     title: "End-to-End Fall Detection System",
     description:
-      "Graduation project in 2025. A comprehensive end-to-end IoT and AI-driven fall detection system spanning hardware and software. At its core, a Deep Learning model analyzes data from a 3-axis accelerometer to detect elderly fall behaviors. Upon detection, an Orange Pi edge device triggers a buzzer alarm while instantly sending push notifications and emergency emails to family members.",
+      "• Graduation Project: Deep Learning application in Fall Detection and warning system.\n\n• Conducted literature review, dataset acquisition, and analysis to ensure dataset suitability for real-world applications.\n\n• Developed a CB-LSTM deep learning model and collected real-time sensor data using an OrangePi IoT edge device.\n\n• Designed and implemented an end-to-end system integrating IoT hardware, AWS cloud services (Lambda, IoT Core, API Gateway), and a Flutter mobile application for seamless functionality.",
     technologies: [
       "FastAPI",
       "AWS",
@@ -225,10 +223,7 @@ function ProjectCard({
         <div
           className={`lg:col-span-5 ${isEven ? "lg:order-2" : "lg:order-1"}`}
         >
-          <p className="text-[#55d5f0] text-lg lg:text-xl mb-2 font-medium">
-            Featured Project
-          </p>
-          <h3 className="text-3xl lg:text-4xl font-bold text-white mb-4">
+          <h3 className="text-2xl lg:text-3xl font-bold text-[#55d5f0] mb-4">
             {project.title}
           </h3>
 
@@ -247,7 +242,7 @@ function ProjectCard({
           {/* Description Card */}
           <div className="relative z-10 mb-6">
             <div className="bg-gradient-to-br from-white/5 to-white/10 backdrop-blur-md rounded-2xl p-6 lg:p-8 border border-white/10 shadow-lg">
-              <p className="text-white/90 text-base lg:text-lg leading-relaxed">
+              <p className="text-white/90 text-sm lg:text-base leading-relaxed whitespace-pre-line">
                 {project.description}
               </p>
             </div>
@@ -432,6 +427,9 @@ export default function Projects(): React.JSX.Element {
   return (
     <section id="lab" className="py-20 px-6">
       <div className="container mx-auto max-w-7xl">
+        <h2 className="text-4xl lg:text-5xl font-bold text-white mb-16 text-center">
+          Featured Projects
+        </h2>
         {projectsData.map((project, index) => {
           const isEven = index % 2 === 1;
           return (

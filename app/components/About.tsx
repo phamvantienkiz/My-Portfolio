@@ -53,7 +53,7 @@ export default function About(): React.JSX.Element {
                     AI Engineer
                   </h5>
                   <p className="text-white/60 text-xs leading-relaxed">
-                    Core ML/DL &amp; CV Development
+                    Core ML/DL &amp; Computer Vision Development
                   </p>
                 </Link>
                 <Link
@@ -75,7 +75,7 @@ export default function About(): React.JSX.Element {
                     AI Solution Architect
                   </h5>
                   <p className="text-white/60 text-xs leading-relaxed">
-                    System Design &amp; Digital Transformation
+                    AI System • Business Automation • Digital Transformation
                   </p>
                 </Link>
               </div>

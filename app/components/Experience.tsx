@@ -13,30 +13,29 @@ interface ExperienceCard {
 const experienceCards: ExperienceCard[] = [
   {
     id: 1,
-    company: "AIOS (Start-up / Co-founder)",
-    role: "Co-founder & AI Fullstack",
+    company: "AIOS (Engineering Collective)",
+    role: "Freelance AI Engineer",
     date: "May 2026 - Present",
     description:
-      "Co-founded AIOS, providing high-efficiency AI systems. Built PODFlow (Top 10 AI Hackathon 2026) for cross-border e-commerce automation and designed secure high-concurrency document OCR & metadata extraction platforms.",
+      "Co-founded an engineering collective delivering tailored AI solutions, business workflow automation, and digital transformation for e-commerce using next-gen AI technologies.",
     icon: "/cards/card-1.png",
-    link: "https://github.com/phamvantienkiz",
   },
   {
     id: 2,
     company: "MEBISOFT",
     role: "AI Development Lead",
-    date: "Nov 2025 - April 2026",
+    date: "Nov 2025 - Apr 2026",
     description:
-      "Lead AI developments. Integrated custom LLM-powered workflow automation agents (Wiki AI) inside MS Teams. Built aquaculture computer vision models (shrimp counting, biomass estimation) and drones/IP camera farm auditing tools.",
+      "Led AI product engineering spanning GenAI and Computer Vision. Architected enterprise RAG & autonomous AI Agent systems, alongside deploying edge-optimized vision models for precision aquaculture and automated farm monitoring.",
     icon: "/cards/card-2.png",
   },
   {
     id: 3,
     company: "ACACY",
-    role: "AI Engineer",
+    role: "AI Engineer (Project-based)",
     date: "Aug 2025 - Oct 2025",
     description:
-      "Architected data post-labeling pipelines for 100+ SKUs. Fine-tuned YOLOX, YOLO-NAS, and Mask R-CNN models to achieve 94.27% accuracy in monitoring Unilever store shelves, executing extensive accuracy-latency analysis.",
+      "Architected data augmentation and post-labeling pipelines across 100+ SKUs. Fine-tuned object detection models (YOLOX, Mask R-CNN) achieving 94.27% accuracy for real-world Unilever retail shelf monitoring.",
     icon: "/cards/card-3.png",
   },
   {
@@ -45,7 +44,7 @@ const experienceCards: ExperienceCard[] = [
     role: "AI Engineer Intern",
     date: "April 2025 - July 2025",
     description:
-      "Architected Bedrock-powered RAG systems. Researched and optimized semantic vs. fixed-size document chunking strategies and prompt instructions to deliver highly accurate context-aware responses.",
+      "Integrated AWS Bedrock-powered RAG systems into enterprise applications. Optimized semantic chunking strategies and system prompting to improve retrieval precision and context-aware LLM responses.",
     icon: "/cards/card-4.png",
   },
 ];
