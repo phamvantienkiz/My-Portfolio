@@ -143,22 +143,13 @@ export default function Banner(): React.JSX.Element {
                 I&apos;m a {displayedText}
                 <span className="animate-pulse">|</span>
               </p>
-              <div className="text-sm lg:text-base text-white/90 tracking-wide flex flex-wrap items-center justify-center lg:justify-start gap-2">
-                {/* <span>Currently, I&apos;m a freelance &amp; AI Engineer at</span> */}
-                <span>
-                  Currently, I&apos;m working as a freelance AI Engineer and
-                  Co-founder at
+              <p className="text-sm lg:text-base text-white/80 leading-relaxed">
+                Currently working as a freelance AI Engineer &amp; Co-founder at{" "}
+                <span className="inline-flex items-center text-[#55d5f0] font-bold bg-[#55d5f0]/10 px-2 py-0.5 rounded border border-[#55d5f0]/30 mx-0.5 align-baseline">
+                  AIOS
                 </span>
-                <span className="flex items-center gap-2">
-                  <span className="text-[#55d5f0] font-bold bg-[#55d5f0]/10 px-2 py-0.5 rounded border border-[#55d5f0]/30">
-                    AIOS
-                  </span>
-                </span>
-                <span>
-                  - a freelance engineering collective in Ho Chi Minh City,
-                  Vietnam 🇻🇳
-                </span>
-              </div>
+                {" "}— an engineering collective based in Ho Chi Minh City, Vietnam 🇻🇳
+              </p>
             </div>
           </div>
         </div>
