@@ -13,11 +13,11 @@ interface ExperienceCard {
 const experienceCards: ExperienceCard[] = [
   {
     id: 1,
-    company: "AIOS (Engineering Collective)",
+    company: "AIOS Team",
     role: "Freelance AI Engineer",
     date: "May 2026 - Present",
     description:
-      "Co-founded an engineering collective delivering tailored AI solutions, business workflow automation, and digital transformation for e-commerce using next-gen AI technologies.",
+      "Worked as a freelance AI Engineer in a team of engineer friends, delivering custom AI solutions, workflow automation, and digital applications.",
     icon: "/cards/card-1.png",
   },
   {

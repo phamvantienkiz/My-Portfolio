@@ -13,13 +13,13 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Pham Van Tien - AI Engineer & Co-founder of AIOS",
-  description: "AI Engineer with hands-on experience in delivering production-ready Computer Vision, AIoT, and AI Agent products. Co-founder of AIOS.",
+  title: "Pham Van Tien - AI Engineer",
+  description: "AI Engineer with hands-on experience in delivering production-ready Computer Vision, AIoT, and AI Agent products.",
   keywords: [
     "Pham Van Tien",
     "AI Engineer",
-    "AIOS",
-    "Co-founder",
+    "AIOS Team",
+    "Freelance AI Engineer",
     "AI Fullstack",
     "Machine Learning Engineer",
     "Computer Vision",
@@ -34,14 +34,14 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "https://phamvantien.dev",
-    title: "Pham Van Tien - AI Engineer & Co-founder of AIOS",
-    description: "AI Engineer with hands-on experience in delivering production-ready Computer Vision, AIoT, and AI Agent products. Co-founder of AIOS.",
+    title: "Pham Van Tien - AI Engineer",
+    description: "AI Engineer with hands-on experience in delivering production-ready Computer Vision, AIoT, and AI Agent products.",
     siteName: "Pham Van Tien Portfolio",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Pham Van Tien - AI Engineer & Co-founder of AIOS",
-    description: "AI Engineer with hands-on experience in delivering production-ready Computer Vision, AIoT, and AI Agent products. Co-founder of AIOS.",
+    title: "Pham Van Tien - AI Engineer",
+    description: "AI Engineer with hands-on experience in delivering production-ready Computer Vision, AIoT, and AI Agent products.",
   },
   robots: {
     index: true,

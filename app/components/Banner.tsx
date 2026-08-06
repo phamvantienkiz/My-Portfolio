@@ -77,7 +77,7 @@ export default function Banner(): React.JSX.Element {
               <div className="relative w-[220px] h-[220px] sm:w-[260px] sm:h-[260px] rounded-full overflow-hidden border-4 border-[#1f9acf]/30 shadow-[0_0_50px_rgba(85,213,240,0.4)] hover:border-[#55d5f0]/60 hover:shadow-[0_0_60px_rgba(85,213,240,0.6)] transition-all duration-500">
                 <Image
                   src="/assets/avata.png"
-                  alt="Pham Van Tien - AI Engineer & Co-founder of AIOS"
+                  alt="Pham Van Tien - Freelance AI Engineer at AIOS Team"
                   fill
                   sizes="(max-width: 640px) 220px, 260px"
                   className="object-cover"
@@ -144,11 +144,12 @@ export default function Banner(): React.JSX.Element {
                 <span className="animate-pulse">|</span>
               </p>
               <p className="text-sm lg:text-base text-white/80 leading-relaxed">
-                Currently working as a freelance AI Engineer &amp; Co-founder at{" "}
+                Currently working as a freelance AI Engineer with the{" "}
                 <span className="inline-flex items-center text-[#55d5f0] font-bold bg-[#55d5f0]/10 px-2 py-0.5 rounded border border-[#55d5f0]/30 mx-0.5 align-baseline">
                   AIOS
-                </span>
-                {" "}— an engineering collective based in Ho Chi Minh City, Vietnam 🇻🇳
+                </span>{" "}
+                — a team of AI engineer friends based in Ho Chi Minh City,
+                Vietnam 🇻🇳
               </p>
             </div>
           </div>

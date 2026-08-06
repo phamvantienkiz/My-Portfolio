@@ -26,10 +26,10 @@ export default function About(): React.JSX.Element {
               workflows with next-gen AI.
             </p> */}
             <p className="text-white/80 leading-relaxed text-base">
-              As the Co-founder of <strong className="text-white">AIOS</strong>,
-              I lead an engineering collective dedicated to empowering
-              businesses and e-commerce platforms through next-gen AI automation
-              and digital transformation.
+              Working as a freelance AI Engineer alongside friends in the{" "}
+              <strong className="text-white">AIOS</strong> team, I collaborate
+              on developing AI solutions and digital automation for real-world
+              applications.
             </p>
 
             {/* Opportunities & Target Roles */}
