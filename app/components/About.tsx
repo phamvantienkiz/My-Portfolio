@@ -26,10 +26,10 @@ export default function About(): React.JSX.Element {
               workflows with next-gen AI.
             </p> */}
             <p className="text-white/80 leading-relaxed text-base">
-              Working as a freelance AI Engineer alongside friends in the{" "}
-              <strong className="text-white">AIOS</strong> team, I collaborate
-              on developing AI solutions and digital automation for real-world
-              applications.
+              Currently, I am working as a freelance AI Engineer alongside my
+              friends in the <strong className="text-white">AIOS</strong> team,
+              I collaborate on developing AI solutions and digital automation
+              for real-world applications.
             </p>
 
             {/* Opportunities & Target Roles */}
