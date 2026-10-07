@@ -40,6 +40,12 @@ const projectsData: Project[] = [
     // GitHub source code is private for this corporate project
     media: [
       {
+        type: "video",
+        src: "1hz_bI7MM-g",
+        caption:
+          "Video Demonstration - Software User Guide Intelligent Document Processing.",
+      },
+      {
         type: "image",
         src: "/projects/idp-extract-info.png",
         caption:
@@ -52,10 +58,10 @@ const projectsData: Project[] = [
           "Management Dashboard - Statistics of processed documents, search filters, and data export.",
       },
       {
-        type: "image",
-        src: "/projects/idp-setting-config.png",
+        type: "video",
+        src: "xwME3UozK8I",
         caption:
-          "Hardware Settings - Configurable device selection (CPU/GPU) for running AI inference on the fly.",
+          "Video Demonstration - Software User Guide Local OCR for Intelligent Document Processing.",
       },
     ],
   },
