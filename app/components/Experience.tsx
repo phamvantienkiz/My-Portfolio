@@ -24,7 +24,7 @@ const experienceCards: ExperienceCard[] = [
     id: 2,
     company: "MEBISOFT",
     role: "AI Development Lead",
-    date: "Nov 2025 - Apr 2026",
+    date: "Nov 2025 - July 2026",
     description:
       "Led AI product engineering spanning GenAI and Computer Vision. Architected enterprise RAG & autonomous AI Agent systems, alongside deploying edge-optimized vision models for precision aquaculture and automated farm monitoring.",
     icon: "/cards/card-2.png",
@@ -32,7 +32,7 @@ const experienceCards: ExperienceCard[] = [
   {
     id: 3,
     company: "ACACY",
-    role: "AI Engineer (Project-based)",
+    role: "AI Engineer (Contract)",
     date: "Aug 2025 - Oct 2025",
     description:
       "Architected data augmentation and post-labeling pipelines across 100+ SKUs. Fine-tuned object detection models (YOLOX, Mask R-CNN) achieving 94.27% accuracy for real-world Unilever retail shelf monitoring.",
