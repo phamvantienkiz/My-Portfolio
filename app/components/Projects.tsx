@@ -27,7 +27,7 @@ const projectsData: Project[] = [
     id: 1,
     title: "Intelligent Document Processing",
     description:
-      "• Developed an enterprise document digitalization platform specialized for Vietnamese administrative records and archival workloads, ensuring strict on-premises data privacy and domain-specific compliance.\n\n• Architected a high-throughput backend & AI pipeline, optimizing full-pipeline OCR + SLM inference on GPUs to support high-concurrency workloads. Achieved batch execution of 2–8 pages concurrently, reducing total request processing time to 4–8 seconds per page while handling heavy multi-user simultaneous document upload and extraction requests.",
+      "Developed an enterprise document digitalization platform specialized for Vietnamese administrative records and archival workloads, ensuring strict on-premises data privacy and domain-specific compliance.\n\nArchitected a high-throughput backend & AI pipeline, optimizing full-pipeline OCR + SLM inference on GPUs to support high-concurrency workloads. Achieved batch execution of 2–8 pages concurrently, reducing total request processing time to 4–8 seconds per page while handling heavy multi-user simultaneous document upload and extraction requests.",
     technologies: [
       "OCR",
       "SLM",
@@ -69,7 +69,7 @@ const projectsData: Project[] = [
     id: 2,
     title: "AI Module for Shrimp Hatchery",
     description:
-      "• Optimized an automated shrimp-counting pipeline deployed on CPU-only environments, reducing total end-to-end processing time to 1.37s per request while maintaining 94% accuracy even in high-density conditions with over 83% overlap.\n\n• Developed a high-precision biomass estimation module (RTMDet-Seg + spinal curve mapping), optimized for edge/CPU deployment to achieve a sub-1s response time per request within a 1.5cm margin of error.\n\n• Developed a hybrid deep learning module integrating image segmentation and EfficientNet-B0 with CBAM attention for shrimp disease classification, achieving 95% accuracy (91% recall) in laboratory environments.",
+      "Optimized an automated shrimp-counting pipeline deployed on CPU-only environments, reducing total end-to-end processing time to 1.37s per request while maintaining 94% accuracy even in high-density conditions with over 83% overlap.\n\nDeveloped a high-precision biomass estimation module (RTMDet-Seg + spinal curve mapping), optimized for edge/CPU deployment to achieve a sub-1s response time per request within a 1.5cm margin of error.\n\nDeveloped a hybrid deep learning module integrating image segmentation and EfficientNet-B0 with CBAM attention for shrimp disease classification, achieving 95% accuracy (91% recall) in laboratory environments.",
     technologies: ["FastAPI", "OpenMMlab - YOLO", "OpenCV", "ONNX"],
     // GitHub source code is private for this project
     media: [
@@ -136,7 +136,7 @@ const projectsData: Project[] = [
     id: 4,
     title: "End-to-End Fall Detection System",
     description:
-      "• Graduation Project: Deep Learning application in Fall Detection and warning system.\n\n• Conducted literature review, dataset acquisition, and analysis to ensure dataset suitability for real-world applications.\n\n• Developed a CB-LSTM deep learning model and collected real-time sensor data using an OrangePi IoT edge device.\n\n• Designed and implemented an end-to-end system integrating IoT hardware, AWS cloud services (Lambda, IoT Core, API Gateway), and a Flutter mobile application for seamless functionality.",
+      "Graduation Project: Deep Learning application in Fall Detection and warning system.\n\nConducted literature review, dataset acquisition, and analysis to ensure dataset suitability for real-world applications.\n\nDeveloped a CB-LSTM deep learning model and collected real-time sensor data using an OrangePi IoT edge device.\n\nDesigned and implemented an end-to-end system integrating IoT hardware, AWS cloud services (Lambda, IoT Core, API Gateway), and a Flutter mobile application for seamless functionality.",
     technologies: [
       "FastAPI",
       "AWS",
