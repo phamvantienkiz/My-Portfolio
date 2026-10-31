@@ -3,65 +3,89 @@ import React from "react";
 interface SkillCategory {
   title: string;
   skills: string[];
+  colSpan?: string;
+  dotColor: string;
 }
 
 const skillCategories: SkillCategory[] = [
   {
     title: "Programming Languages",
-    skills: ["Python (Expert)", "C++", "SQL", "Java", "C#"],
+    skills: ["Python", "C++", "Java", "C#", "SQL"],
+    dotColor: "bg-cyan-400 shadow-[0_0_8px_#22d3ee]",
   },
   {
-    title: "AI & Machine Learning",
-    skills: [
-      "LLM",
-      "VLM",
-      "RAG",
-      "AI Agents",
-      "Detection",
-      "Segmentation",
-      "Tracking",
-      "OCR",
-    ],
-  },
-  {
-    title: "Libraries & Frameworks",
+    title: "Computer Vision",
     skills: [
       "PyTorch",
-      "Tensorflow",
-      "Hugging Face",
+      "YOLO",
+      "MMDetection",
+      "ResNet",
+      "BiLSTM",
+      "U-Net",
+      "OpenCV",
+      "OCR",
+    ],
+    dotColor: "bg-emerald-400 shadow-[0_0_8px_#34d399]",
+  },
+  {
+    title: "LLM",
+    skills: [
       "LangChain",
       "LangGraph",
       "vLLM",
-      "llama.cpp",
-      "ONNX",
-      "YOLO",
-      "OpenCV",
-      "OpenMMLab",
-      "FastAPI",
-      "Spring Boot",
-      ".Net Core",
-      "Next.js",
+      "Llama.cpp",
+      "Hugging Face",
+      "AWS Bedrock",
+      "Hybrid Search",
+      "Reranking",
     ],
+    dotColor: "bg-purple-400 shadow-[0_0_8px_#c084fc]",
   },
   {
-    title: "Tools & Platforms",
+    title: "Vector DB",
+    skills: ["Qdrant", "FAISS", "ChromaDB", "Pinecone"],
+    dotColor: "bg-amber-400 shadow-[0_0_8px_#fbbf24]",
+  },
+  {
+    title: "Inference & Optimization",
     skills: [
-      "Git",
-      "Linux",
-      "Docker",
-      "AWS",
-      "MLflow",
-      "FAISS",
-      "ChromaDB",
-      "Pinecone",
+      "ONNX Runtime",
+      "CPU/NPU",
+      "TensorRT",
+      "TinyML (ARM Cortex-M/STM32, ESP32)",
+    ],
+    dotColor: "bg-rose-500 shadow-[0_0_8px_#f43f5e]",
+  },
+  {
+    title: "Backend",
+    skills: [
+      "FastAPI",
+      "Next.js",
       "PostgreSQL",
-      "SQLite",
       "MySQL",
       "Redis",
       "Firebase",
-      "Raspberry Pi",
-      "Postman",
+      "Flutter",
+      "Spring Boot",
+      ".NET Core",
     ],
+    dotColor: "bg-blue-400 shadow-[0_0_8px_#60a5fa]",
+  },
+  {
+    title: "Infra & Tools",
+    skills: [
+      "Linux",
+      "Docker",
+      "MLOps",
+      "MLflow",
+      "AWS",
+      "Git",
+      "Raspberry Pi",
+      "Antigravity",
+      "Claude Code",
+    ],
+    colSpan: "md:col-span-2 lg:col-span-3",
+    dotColor: "bg-orange-400 shadow-[0_0_8px_#fb923c]",
   },
 ];
 
@@ -72,15 +96,17 @@ export default function TechStack(): React.JSX.Element {
         <h2 className="text-4xl lg:text-5xl font-bold text-white mb-12 text-center">
           Tech Stack
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {skillCategories.map((category, idx) => (
             <div
               key={idx}
-              className="bg-slate-950/20 p-6 rounded-2xl border border-white/5 hover:border-[#1f9acf]/30 transition-all duration-300 shadow-lg"
+              className={`bg-slate-950/20 p-6 rounded-2xl border border-white/5 hover:border-[#1f9acf]/30 transition-all duration-300 shadow-lg ${category.colSpan || ""}`}
             >
               <h4 className="text-lg font-bold text-white mb-4 border-b border-white/10 pb-2 flex items-center justify-between">
                 <span>{category.title}</span>
-                <span className="w-2 h-2 rounded-full bg-[#55d5f0] animate-pulse"></span>
+                <span
+                  className={`w-2 h-2 rounded-full animate-pulse ${category.dotColor}`}
+                ></span>
               </h4>
               <div className="flex flex-wrap gap-2">
                 {category.skills.map((skill, skillIdx) => (
