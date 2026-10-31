@@ -14,10 +14,15 @@ export default function About(): React.JSX.Element {
           <div className="lg:col-span-2 space-y-6">
             <h3 className="text-2xl font-semibold text-[#55d5f0]">Who I Am</h3>
             <p className="text-white/80 leading-relaxed text-base">
-              I am an AI Engineer driven by the ambition to bridge cutting-edge
-              research with production-grade software solutions. I specialize in
-              end-to-end Machine Learning pipelines, real-time Computer Vision,
-              and highly interactive AI Agent architectures.
+              AI Engineer with ~1.5 years of experience delivering production
+              real-time Computer Vision, Edge and AIoT solutions. Specialized in
+              end-to-end vision engineering, spanning concurrent video/RTSP
+              stream processing, GPU/Edge inference optimization, and
+              high-throughput AI serving backends. Track record of shipping
+              low-latency, highly reliable vision systems on constrained devices
+              and integrating them with IoT hardware (IP cameras, sensors),
+              alongside high-speed document intelligence pipelines powered by
+              internal LLMs and RAG.
             </p>
             {/* <p className="text-white/80 leading-relaxed text-base">
               Currently co-founding{" "}
@@ -93,7 +98,21 @@ export default function About(): React.JSX.Element {
                 <span className="text-lg">🎓</span>
                 <div>
                   <strong className="text-white block font-semibold text-[14px]">
-                    Ho Chi Minh City University of Technology
+                    University of Information Technology (UIT) - VNUHCM
+                  </strong>
+                  <span className="text-white/60 text-xs block mt-0.5">
+                    2026 – Expected 2028
+                  </span>
+                  <span className="text-white/80 block mt-1">
+                    Master of Science in Computer Science
+                  </span>
+                </div>
+              </div>
+              <div className="flex items-start gap-2.5 text-sm text-white/80">
+                <span className="text-lg">🎓</span>
+                <div>
+                  <strong className="text-white block font-semibold text-[14px]">
+                    Ho Chi Minh City University of Technology (HUTECH)
                   </strong>
                   <span className="text-white/60 text-xs block mt-0.5">
                     2021 – 2025
