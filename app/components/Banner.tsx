@@ -144,13 +144,8 @@ export default function Banner(): React.JSX.Element {
                 <span className="inline-flex items-center text-[#55d5f0] font-bold bg-[#55d5f0]/10 px-2 py-0.5 rounded border border-[#55d5f0]/30 mx-0.5 align-baseline">
                   AIOS
                 </span>{" "}
-<<<<<<< HEAD
                 — a team of AI engineer friends based in Ho Chi Minh City,
                 Vietnam 🇻🇳
-=======
-                — an engineering collective based in Ho Chi Minh City, Vietnam
-                🇻🇳
->>>>>>> dev
               </p>
             </div>
           </div>
