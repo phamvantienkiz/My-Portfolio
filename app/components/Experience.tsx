@@ -24,7 +24,7 @@ const experienceCards: ExperienceCard[] = [
     id: 2,
     company: "MEBISOFT",
     role: "AI Development Lead",
-    date: "Nov 2025 - July 2026",
+    date: "Nov 2025 - Sep 2026",
     description:
       "Led AI product engineering spanning GenAI and Computer Vision. Architected enterprise RAG & autonomous AI Agent systems, alongside deploying edge-optimized vision models for precision aquaculture and automated farm monitoring.",
     icon: "/cards/card-2.png",
