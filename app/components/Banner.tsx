@@ -3,11 +3,7 @@
 import Image from "next/image";
 import { useState, useEffect } from "react";
 
-const texts = [
-  "AI Engineer",
-  "AI Fullstack Developer",
-  "AI Solutions Architect",
-];
+const texts = ["AI Engineer", "AI Software Engineer", "AI Solutions Architect"];
 
 export default function Banner(): React.JSX.Element {
   const [currentTextIndex, setCurrentTextIndex] = useState(0);
@@ -147,8 +143,9 @@ export default function Banner(): React.JSX.Element {
                 Currently working as a freelance AI Engineer &amp; Co-founder at{" "}
                 <span className="inline-flex items-center text-[#55d5f0] font-bold bg-[#55d5f0]/10 px-2 py-0.5 rounded border border-[#55d5f0]/30 mx-0.5 align-baseline">
                   AIOS
-                </span>
-                {" "}— an engineering collective based in Ho Chi Minh City, Vietnam 🇻🇳
+                </span>{" "}
+                — an engineering collective based in Ho Chi Minh City, Vietnam
+                🇻🇳
               </p>
             </div>
           </div>
